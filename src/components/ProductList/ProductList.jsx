@@ -34,7 +34,7 @@ const ProductList = () => {
         }
         console.log(data);
 
-        fetch('api/web-data', {
+        fetch('/api/web-data', {
             method: 'POST',
             headers: {
                 'Content-Type': 'application/json',
