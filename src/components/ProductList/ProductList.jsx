@@ -48,13 +48,13 @@ function ProductList() {
 
     return (
         <div className='list'>
-            {products.map(product => {
+            {products.map(product => (
                 <ProductItem
                     product={product}
                     onAdd={onAdd}
                     className={'item'}
                 />
-            })}
+            ))}
         </div>
     )
 }
