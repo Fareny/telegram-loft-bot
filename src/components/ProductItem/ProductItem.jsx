@@ -17,7 +17,7 @@ function ProductItem({ product, className, onAdd }) {
             <div className={'price'}>
                 <span>Стоимость: <b>{product.price}</b></span>
             </div>
-            <Button className={'add-btn'} onClick={() => { onAddHandler }} >
+            <Button className={'add-btn'} onClick={onAddHandler} >
                 Добавить
             </Button>
         </div>
