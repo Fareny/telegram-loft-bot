@@ -48,8 +48,6 @@ const ProductList = () => {
         }
     }, [onSendData])
 
-    onSendData();
-
     const onAdd = (product) => {
         const alreadyAdded = addedItems.find(item => item.id === product.id);
         let newItems = [];
