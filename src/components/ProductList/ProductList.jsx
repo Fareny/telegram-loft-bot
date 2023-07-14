@@ -47,7 +47,7 @@ function ProductList() {
     }
 
     return (
-        <div className='list'>
+        <div className={'list'}>
             {products.map(product => (
                 <ProductItem
                     product={product}
