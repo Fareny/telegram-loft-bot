@@ -36,9 +36,9 @@ const ProductList = () => {
             headers: {
                 'Content-Type': 'application/json',
             },
-            body: JSON.stringify(data)
+            body: JSON.stringify(data),
         })
-        console.log(data);
+
     }, [addedItems])
 
     useEffect(() => {
@@ -47,6 +47,8 @@ const ProductList = () => {
             tg.offEvent('mainButtonClicked', onSendData)
         }
     }, [onSendData])
+
+    onSendData();
 
     const onAdd = (product) => {
         const alreadyAdded = addedItems.find(item => item.id === product.id);
