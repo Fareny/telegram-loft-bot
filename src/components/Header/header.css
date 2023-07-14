@@ -8,4 +8,20 @@
 
 .username {
     margin-left: auto;
+    color: #606dab;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.username-icon {
+    font-size: 25px;
+    color: #606dab;
+}
+
+.header-title {
+    color: #ededed;
+    text-align: center;
+    font-family: cursive;
+    background-color: #606dab;
 }

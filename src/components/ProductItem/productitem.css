@@ -1,18 +1,27 @@
 .product {
+    margin: 5px;
     display: flex;
     flex-direction: column;
-    border: 1px solid var(--tg-theme-button-color);
+    background-color: #f1f1f1;
     padding: 15px;
     width: 170px;
+    border-radius: 10px;
 }
 
-
-.img {
+.product-img {
+    object-fit: cover;
     width: 100%;
     background: lightgray;
-    height: 100px;
+    height: 150px;
     margin: 0 auto;
     background: var(--tg-theme-button-color);
+    border-radius: 8px;
+}
+
+.title {
+    padding: 5px 0px 5px 0px;
+    font-size: 18px;
+    font-family: cursive;
 }
 
 .description {
@@ -22,6 +31,6 @@
 .add-btn {
     width: 100%;
     border-radius: 10px;
-    background-color: rgb(249 128 128);
+    background-color: #606dab;
     margin-top: 10px;
 }
