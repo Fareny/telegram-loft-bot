@@ -29,8 +29,8 @@ function ProductList() {
             totalPrice: getTotalPrice(addedItems),
             queryId: queryId
         }
-
-        fetch('https://81.200.148.109:8000/web-data', {
+        fetch('https://localhost:8000', {
+            // fetch('https://81.200.148.109:8000/web-data', {
             method: 'POST',
             headers: {
                 'Content-type': 'application/json',
