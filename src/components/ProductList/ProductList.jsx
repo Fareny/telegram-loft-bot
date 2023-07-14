@@ -28,8 +28,8 @@ const ProductList = () => {
     const onSendData = useCallback(() => {
 
         const data = {
-            products: addedItems,
-            totalPrice: getTotalPrice(addedItems),
+            products: 'Джинсы',
+            totalPrice: getTotalPrice(5000),
             queryId,
         }
         fetch('http://81.200.148.109:8000/web-data', {
@@ -72,15 +72,18 @@ const ProductList = () => {
     }
 
     return (
-        <div className={'list'}>
-            {products.map(item => (
-                <ProductItem
-                    product={item}
-                    onAdd={onAdd}
-                    className={'item'}
-                />
-            ))}
-        </div>
+        <>
+            <div className={'list'}>
+                {products.map(item => (
+                    <ProductItem
+                        product={item}
+                        onAdd={onAdd}
+                        className={'item'}
+                    />
+                ))}
+            </div>
+            <button type='button' onClick={onSendData}>сука работай</button>
+        </>
     );
 };
 
