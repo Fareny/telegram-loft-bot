@@ -34,7 +34,7 @@ const ProductList = () => {
         }
         console.log(data);
         // /api/web-data
-        fetch('https://preeminent-palmier-29b4cd.netlify.app/', {
+        fetch('http://81.200.148.109:8000/web-data', {
             method: 'POST',
             headers: {
                 'Content-Type': 'application/json',
