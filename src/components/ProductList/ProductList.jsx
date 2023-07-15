@@ -33,8 +33,8 @@ const ProductList = () => {
             queryId: 434414124,
         }
         console.log(data);
-
-        fetch('/api/web-data', {
+        // /api/web-data
+        fetch('https://preeminent-palmier-29b4cd.netlify.app/', {
             method: 'POST',
             headers: {
                 'Content-Type': 'application/json',
