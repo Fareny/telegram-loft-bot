@@ -22,6 +22,7 @@ const getTotalPrice = (items = []) => {
 }
 
 const ProductList = () => {
+
     const [addedItems, setAddedItems] = useState([]);
     const { tg, queryId } = useTelegram();
 
@@ -33,13 +34,13 @@ const ProductList = () => {
             queryId: 434414124,
         }
         console.log(data);
-        // /api/web-data
-        fetch('http://81.200.148.109:8000/web-data', {
+
+        fetch('http://1555861-straengel.twc1.net:8000/web-data', {
             method: 'POST',
-            headers: {
-                'Content-Type': 'application/json',
-            },
             body: JSON.stringify(data),
+            headers: {
+                'Content-type': 'application/json',
+            }
         })
 
     }, [addedItems])
