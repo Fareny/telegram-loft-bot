@@ -14,6 +14,7 @@ function Header() {
                 <Button onClick={onClose}>Закрыть</Button>
                 <span className={'username'}>
                     <BsPersonCircle className={'username-icon'} />{user?.username}
+                    <div>{user}</div>
                 </span>
             </div>
         </>
